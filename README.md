@@ -33,7 +33,7 @@ var lineGiftBoxResult = Proxy.DoCommand(container.UpdateCartLineGiftBox(cartId, 
 ```
 
 ### GiftBoxFee Cart Adjustment
-When working with a `Cart` object, `Adjustments` collection will contain `GiftBoxFee` adjustment. Cart totals will includes the adjustment.
+When working with a `Cart` object, `Adjustments` collection will contain `GiftBoxFee` adjustment. Cart totals will be calculated to include the adjustment as well.
 ```json
 {
     "AdjustmentType":"GiftBox",
