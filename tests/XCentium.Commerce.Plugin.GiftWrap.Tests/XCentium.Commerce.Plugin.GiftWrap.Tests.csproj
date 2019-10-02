@@ -21,6 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\XCentium.Sitecore.Commerce.GiftWrap\XCentium.Commerce.Plugin.GiftWrap.csproj" />
+    <ProjectReference Include="..\..\src\XCentium.Commerce.Plugin.GiftWrap\XCentium.Commerce.Plugin.GiftWrap.csproj" />
   </ItemGroup>
 </Project>
