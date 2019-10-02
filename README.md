@@ -27,7 +27,7 @@ var sellableItemId = "Some-Sellable-Item-Id";
 
 var addLineResult = Proxy.DoCommand(container.AddCartLine(cartId, sellableItemId, 1));
 
-var lineAdded = (LineAdded)commandResult1.Models.Where(m => m.GetType() == typeof(LineAdded)).FirstOrDefault();
+var lineAdded = (LineAdded)addLineResult.Models.Where(m => m.GetType() == typeof(LineAdded)).FirstOrDefault();
 
 var lineGiftBoxResult = Proxy.DoCommand(container.UpdateCartLineGiftBox(cartId, lineAdded.LineId, true));
 ```
