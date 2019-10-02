@@ -4,7 +4,6 @@ The plugin allows to add gift wrapping functionality to your Sitecore Commerce i
 - This integrates with and extends commerce Carts plugin functionality by adding gift box `CartLevelAwardedAdjustment` to a `Cart` object.
 - The plugin includes back-end functionality that can be integrated with your Sitecore components using `Sitecore.Commerce.ServiceProxy`.
 - Developed for Commerce 9 Update-3; however, Sitecore Commerce NuGet packages can be updated to match your installed version.
-- It is very easy to integrate or extend to fit your needs.
 
 ## Sponsor 
 
@@ -34,7 +33,7 @@ var lineGiftBoxResult = Proxy.DoCommand(container.UpdateCartLineGiftBox(cartId, 
 ```
 
 ### GiftBoxFee Cart Adjustment
-When working with a `Cart` object, `Adjustments` collection will contain `GiftBoxFee` adjustment.
+When working with a `Cart` object, `Adjustments` collection will contain `GiftBoxFee` adjustment. Cart totals will includes the adjustment.
 ```json
 {
     "AdjustmentType":"GiftBox",
