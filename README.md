@@ -22,7 +22,7 @@ This plugin was sponsored and created by XCentium.
     "IsTaxable": false
 }
 ```
-5. Bootstrap and deploy the Sitecore Commerce Engine.
+5. Bootstrap and deploy Sitecore Commerce Engine.
 
 ## How to Use
 
