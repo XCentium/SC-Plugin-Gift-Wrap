@@ -14,12 +14,17 @@ This plugin was sponsored and created by XCentium.
 1. Copy `XCentium.Commerce.Plugin.GiftWrap` and `Sitecore.Commerce.ServiceProxy` to your Sitecore Commerce Engine solution and add as projects.
 2. Add `XCentium.Commerce.Plugin.GiftWrap` as a dependency to your `Sitecore.Commerce.Engine` project.
 3. If your Sitecore Commerce Engine solution includes other custom plugins that modify ServiceProxy then re-execute the update of Connected Services inside of `Sitecore.Commerce.ServiceProxy` project.
+4. Bootstrap and deploy the Sitecore Commerce Engine.
 
 ## How to Use
 
-### Configure Sellable Items in BizFx
+### Configure Sellable Items in BizFX
+
+When working in Merchandising sectiong of BizFx, you can configure gift wrapping for a sellable item.
+![alt text](https://github.com/XCentium/SC-Plugin-Gift-Wrap/blob/master/images/bizfx-gift-wrap.png)
 
 ### UpdateCartLineGiftBox Commerce Command
+
 An example of using UpdateCartLineGiftBox ServiceProxy command to add gift wrapping to a cart line.
 ```csharp
 var cartId = "Some-Cart-Id";
@@ -33,6 +38,7 @@ var lineGiftBoxResult = Proxy.DoCommand(container.UpdateCartLineGiftBox(cartId, 
 ```
 
 ### GiftBoxFee Cart Adjustment
+
 When working with a `Cart` object, `Adjustments` collection will contain `GiftBoxFee` adjustment. Cart totals will be calculated to include the adjustment as well.
 ```json
 {
@@ -49,7 +55,7 @@ When working with a `Cart` object, `Adjustments` collection will contain `GiftBo
 }
 ```
 
-### BizFx Order Details
+### BizFX Order Details
 
 ## Note
 
