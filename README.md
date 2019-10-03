@@ -14,7 +14,15 @@ This plugin was sponsored and created by XCentium.
 1. Copy `XCentium.Commerce.Plugin.GiftWrap` and `Sitecore.Commerce.ServiceProxy` to your Sitecore Commerce Engine solution and add as projects.
 2. Add `XCentium.Commerce.Plugin.GiftWrap` as a dependency to your `Sitecore.Commerce.Engine` project.
 3. If your Sitecore Commerce Engine solution includes other custom plugins that modify ServiceProxy then re-execute the update of Connected Services inside of `Sitecore.Commerce.ServiceProxy` project.
-4. Bootstrap and deploy the Sitecore Commerce Engine.
+4. Add `GiftBoxFeeAdjustmentPolicy` policy to your environment configuration JSON file (e.g. PlugIn.Habitat.CommerceAuthoring-1.0.0.json)
+```json
+{
+    "$type": "XCentium.Commerce.Plugin.GiftWrap.Policies.GiftBoxFeeAdjustmentPolicy, XCentium.Commerce.Plugin.GiftWrap",
+    "FeeAmount": 4.25,
+    "IsTaxable": false
+}
+```
+5. Bootstrap and deploy the Sitecore Commerce Engine.
 
 ## How to Use
 
