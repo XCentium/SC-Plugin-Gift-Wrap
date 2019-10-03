@@ -21,6 +21,7 @@ This plugin was sponsored and created by XCentium.
 ### Configure Sellable Items in BizFX
 
 When working in Merchandising sectiong of BizFx, you can configure gift wrapping for a sellable item.
+
 ![alt text](https://github.com/XCentium/SC-Plugin-Gift-Wrap/blob/master/images/bizfx-gift-wrap.png)
 
 ### UpdateCartLineGiftBox Commerce Command
